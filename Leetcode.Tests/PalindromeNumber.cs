@@ -5,7 +5,7 @@ An integer is a palindrome when it reads the same backward as forward. For examp
 
 using Xunit;
 
-namespace Leetcode
+namespace Leetcode.Tests
 {
     public class PalindromeNumber
     {
@@ -31,7 +31,7 @@ namespace Leetcode
         [InlineData(10,false)]
         [InlineData(int.MaxValue,false)]
         [InlineData(0,true)]
-        [InlineData(34343434343,true)]
+        [InlineData(434343434,true)]
         public void Test(int x, bool result)
         {
             Assert.Equal(result, IsPalindrome(x));
